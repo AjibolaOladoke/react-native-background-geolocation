@@ -6,10 +6,9 @@ A practical reference entry for product and engineering: the react-native-backgr
 
 ## Images
 
-[![react-native-background-geolocation](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![react-native-background-geolocation](images/preview.png)](https://github.com/Swift-Tech-Co/react-native-background-geolocation)
 
 ## We're moving
-
 
 ## Submitting issues
 
@@ -23,9 +22,6 @@ In that case, also provide relevant parts of output of `adb logcat` command.
 ## Issue Hunt
 
 Fund your issues or feature request to drag attraction of developers. Checkout our issue hunt page.
-
-
-
 
 ## Description
 React Native fork of cordova-plugin-background-geolocation
@@ -108,7 +104,7 @@ class BgTracking extends Component {
       fastestInterval: 5000,
       activitiesInterval: 10000,
       stopOnStillActivity: false,
-      url: 'https://www.swifttechco.com',
+      url: 'https://github.com/Swift-Tech-Co/react-native-background-geolocation',
       httpHeaders: {
         'X-FOO': 'bar'
       },
@@ -320,7 +316,6 @@ Configure options:
 DIS = DISTANCE\_FILTER\_PROVIDER
 ACT = ACTIVITY\_PROVIDER
 RAW = RAW\_PROVIDER
-
 
 Partial reconfiguration is possible by later providing a subset of the configuration options:
 
@@ -551,7 +546,6 @@ Both can be requested via option `postTemplate`.
 
 Note: Do not use location `id` as unique key in your database as ids will be reused when `option.maxLocations` is reached.
 
-
 ### Activity event
 | Activity parameter | Type      | Description                                                            |
 |--------------------|-----------|------------------------------------------------------------------------|
@@ -644,7 +638,7 @@ BackgroundGeolocation.headlessTask(async (event) => {
     if (event.name === 'location' ||
       event.name === 'stationary') {
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://www.swifttechco.com');
+        xhr.open('POST', 'https://github.com/Swift-Tech-Co/react-native-background-geolocation');
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(event.params));
     }
@@ -662,7 +656,6 @@ BackgroundGeolocation.checkStatus(({ isRunning }) => {
   }
 });
 ```
-
 
 ### Transforming/filtering locations in native code
 
@@ -694,7 +687,6 @@ BackgroundGeolocationFacade.setLocationTransform(new LocationTransform() {
 ```
 
 iOS example:
-
 
 In `didFinishLaunchingWithOptions` delegate method, write some code like this:
 
@@ -745,7 +737,6 @@ TODO
 
 **NOTE:** For iOS  in addition, you must manually enable the *Audio and Airplay* background mode in *Background Capabilities* to hear these debugging sounds.
 
-
 ## Geofencing
 Try using react-native-boundary. Let's keep this plugin lightweight as much as possible.
 
@@ -769,13 +760,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/react-native-background-geolocation
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [transistorsoft/react-native-background-geolocation](https://github.com/transistorsoft/react-native-background-geolocation) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
