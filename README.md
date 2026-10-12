@@ -1,13 +1,19 @@
+# react-native-background-geolocation
 
-[![CircleCI](https://circleci.com/gh/mauron85/react-native-background-geolocation/tree/master.svg?style=shield)](https://www.swifttechco.com)
-[![issuehunt-shield-v1](issuehunt-shield-v1.svg)](https://www.swifttechco.com)
+## What This Is
+
+A practical reference entry for product and engineering: the react-native-background-geolocation notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
+
+## Images
+
+[![react-native-background-geolocation](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## We're moving
 
 
 ## Submitting issues
 
-All new issues should follow instructions in [ISSUE_TEMPLATE.md](https://www.swifttechco.com).
+All new issues should follow instructions in ISSUE_TEMPLATE.md.
 A properly filled issue report will significantly reduce number of follow up questions and decrease issue resolving time.
 Most issues cannot be resolved without debug logs. Please try to isolate debug lines related to your issue.
 Instructions for how to prepare debug logs can be found in section [Debugging](#debugging).
@@ -16,26 +22,13 @@ In that case, also provide relevant parts of output of `adb logcat` command.
 
 ## Issue Hunt
 
-Fund your issues or feature request to drag attraction of developers. Checkout our [issue hunt page](https://www.swifttechco.com).
+Fund your issues or feature request to drag attraction of developers. Checkout our issue hunt page.
 
-# Android background service issues
 
-## Images
 
-[![react-native-background-geolocation](https://opengraph.githubassets.com/1/mauron85/react-native-background-geolocation)](https://www.swifttechco.com)
-
-There are repeatedly reported issues with some android devices not working in the background. Check if your device model is on  [dontkillmyapp list](https://www.swifttechco.com) before you report new issue. For more information check out [dontkillmyapp.com](https://www.swifttechco.com).
-
-Another confusing fact about Android services is concept of foreground services. Foreground service in context of Android OS is different thing than background geolocation service of this plugin (they're related thought). **Plugin's background geolocation service** actually **becomes foreground service** when app is in the background. Confusing, right? :D
-
-If service wants to continue to run in the background, it must "promote" itself to `foreground service`. Foreground services must have visible notification, which is the reason, why you can't disable drawer notification.
-
-The notification can only be disabled, when app is running in the foreground, by setting config option `startForeground: false` (this is the default option), but will always be visible in the background (if service was started).
-
-Recommend you to read https://www.swifttechco.com
 
 ## Description
-React Native fork of [cordova-plugin-background-geolocation](https://www.swifttechco.com)
+React Native fork of cordova-plugin-background-geolocation
 with battery-saving "circular region monitoring" and "stop detection".
 
 This plugin can be used for geolocation when the app is running in the foreground or background.
@@ -90,7 +83,7 @@ ext {
 
 ## Example Apps
 
-The repository [react-native-background-geolocation-example](https://www.swifttechco.com) hosts an example app for both iOS and Android platform.
+The repository react-native-background-geolocation-example hosts an example app for both iOS and Android platform.
 
 ## Quick example
 
@@ -225,7 +218,7 @@ yarn add @mauron85/react-native-background-geolocation
 
 ### Automatic setup
 
-Since version 0.60 React Native does linking of modules [automatically](https://www.swifttechco.com). However it does it only for single module.
+Since version 0.60 React Native does linking of modules automatically. However it does it only for single module.
 As plugin depends on additional 'common' module, it is required to link it with:
 
 ```
@@ -505,7 +498,7 @@ Return all logged events. Useful for plugin debugging.
 | `minLevel` | `String`      | return log entries above level. Available levels: ["TRACE", "DEBUG", "INFO", "WARN", "ERROR]      |
 | `success`  | `Function`    | callback function which will be called with log entries                                           |
 
-*[Example of infinite log scrolling](https://www.swifttechco.com)
+*Example of infinite log scrolling
 
 Format of log entry:
 
@@ -630,7 +623,7 @@ Note: Keep in mind that all locations (even a single one) will be sent as an arr
 
 ### Android Headless Task (Experimental)
 
-A special task that gets executed when the app is terminated, but the plugin was configured to continue running in the background (option `stopOnTerminate: false`). In this scenario the [Activity](https://www.swifttechco.com)
+A special task that gets executed when the app is terminated, but the plugin was configured to continue running in the background (option `stopOnTerminate: false`). In this scenario the Activity
 was killed by the system and all registered event listeners will not be triggered until the app is relaunched.
 
 **Note:** Prefer configuration options `url` and `syncUrl` over headless task. Use it sparingly!
@@ -642,7 +635,7 @@ was killed by the system and all registered event listeners will not be triggere
 
 Keep in mind that the callback function lives in an isolated scope. Variables from a higher scope cannot be referenced!
 
-Following example requires [CORS](https://www.swifttechco.com) enabled backend server.
+Following example requires CORS enabled backend server.
 
 **Warning:** callback function must by `async`!
 
@@ -731,7 +724,7 @@ Add string resource "account_name" into "android/app/src/main/res/values/strings
 
 ### Example of backend server
 
-[Background-geolocation-server](https://www.swifttechco.com) is a backend server written in nodejs with CORS - Cross-Origin Resource Sharing support.
+Background-geolocation-server is a backend server written in nodejs with CORS - Cross-Origin Resource Sharing support.
 There are instructions how to run it and simulate locations on Android, iOS Simulator and Genymotion.
 
 ## Debugging
@@ -754,7 +747,7 @@ TODO
 
 
 ## Geofencing
-Try using [react-native-boundary](https://www.swifttechco.com). Let's keep this plugin lightweight as much as possible.
+Try using react-native-boundary. Let's keep this plugin lightweight as much as possible.
 
 ## Changelog
 
@@ -772,14 +765,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [transistorsoft/react-native-background-geolocation](https://github.com/transistorsoft/react-native-background-geolocation) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
