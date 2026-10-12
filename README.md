@@ -790,3 +790,11 @@ Compiled and maintained from upstream [transistorsoft/react-native-background-ge
 ---
 
 Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+
+## Sources
+
+Compiled and maintained from upstream [transistorsoft/react-native-background-geolocation](https://github.com/transistorsoft/react-native-background-geolocation) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
